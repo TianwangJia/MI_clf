@@ -1,0 +1,5 @@
+__pycache__/
+data/
+csp_svm/*.dat
+csp_svm/*.csv
+csp_svm/.ipynb_checkpoints
