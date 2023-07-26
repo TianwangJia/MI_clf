@@ -106,7 +106,7 @@ for epoch in tqdm(range(args.n_epochs), desc='epoch', position=1):
         # print('len(train):', len(train_dataloader))
         optimizer.zero_grad()
         y_hat = model(X)
-        loss = criterion(y, y_hat)
+        loss = criterion(y_hat,y)
         loss.backward()
         optimizer.step()
 
