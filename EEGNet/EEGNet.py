@@ -80,7 +80,6 @@ class EEGNet(nn.Module):
         x = self.block_3(x)
         x = x.view(x.size(0), -1)
         x = self.fc(x)
-        out = F.softmax(x, dim=1)
         return out
 
 
